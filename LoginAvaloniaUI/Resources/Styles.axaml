@@ -6,6 +6,7 @@
           <TextBox Watermark="Email"/>
           <Button Classes="googleButton" HorizontalAlignment="Stretch"/>
           <Button Classes="submitButton" Content="Login" HorizontalAlignment="Stretch"/>
+          <Button Classes="exitButton" Content="Exit" HorizontalAlignment="Stretch"/>
       </StackPanel>
     </Border>
   </Design.PreviewWith>
@@ -17,7 +18,7 @@
         <Setter Property="BorderThickness" Value="2"/>
         <Setter Property="BorderBrush" Value="rgba(0,0,0,0.3)"/>
         <Setter Property="CornerRadius" Value="12"/>
-        <Setter Property="Foreground" Value="rgba(0,0,0,0.3)"/>
+        <Setter Property="Foreground" Value="rgba(0,0,0,0.5)"/>
         <Setter Property="FontWeight" Value="Medium"/>
         <Setter Property="FontSize" Value="12"/>
         <Setter Property="Transitions">
@@ -27,7 +28,7 @@
         </Setter>
         <Style Selector="^ /template/ TextBlock#PART_Watermark">
             <Setter Property="FontSize" Value="12"/>
-            <Setter Property="Foreground" Value="rgba(0,0,0,0.3)"/>
+            <Setter Property="Foreground" Value="rgba(0,0,0,0.5)"/>
             <Setter Property="FontWeight" Value="Medium"/>
 			<Setter Property="Transitions">
                 <Transitions>
@@ -130,6 +131,21 @@
         <Setter Property="FontWeight" Value="Medium"/>
         <Style Selector="^:pointerover /template/ ContentPresenter#PART_ContentPresenter">        
 			<Setter Property="Background" Value="{DynamicResource prColor}"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Style>
+
+    <Style Selector="Button.exitButton">
+		<Setter Property="Height" Value="50"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="CornerRadius" Value="25"/>
+        <Setter Property="Background" Value="{DynamicResource sndColor}"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Style Selector="^:pointerover /template/ ContentPresenter#PART_ContentPresenter">        
+			<Setter Property="Background" Value="{DynamicResource sndColor}"/>
             <Setter Property="Foreground" Value="White"/>
         </Style>
     </Style>
