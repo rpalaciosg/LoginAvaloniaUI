@@ -98,7 +98,7 @@
                                     <Style Selector="^ Grid.logo">
 										<Setter Property="Margin" Value="0 0 0 0"/>                                        
                                     </Style>
-                                    <Style Selector="^ TextBlock.Text">
+                                    <Style Selector="^ TextBlock.text">
                                         <Setter Property="Width" Value="104"/>
                                     </Style>
                                 </Style>
