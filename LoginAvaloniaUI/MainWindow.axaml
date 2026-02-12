@@ -1,3 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -39,8 +40,41 @@
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid Grid.Column="1">
-				
+            <Grid Grid.Column="1" Margin="100 0 100 0">                
+                <!--<Border Background="Red" Opacity="0.3">--><!--esto de aqui es solo para depurar-->
+				    <StackPanel HorizontalAlignment="Stretch" 
+                                VerticalAlignment="Center" Orientation="Vertical"
+                                Spacing="20">
+					    <TextBlock Text="Login" FontSize="16" FontWeight="ExtraBold" 
+                                   HorizontalAlignment="Center" Foreground="rgba(0,0,0,0.9)"/>
+                        <TextBlock Text="Bienvenido a D1POS" HorizontalAlignment="Center"
+                                   FontSize="14" FontWeight="SemiBold" Foreground="rgba(0,0,0,0.8)"/>
+                        
+                        <StackPanel Orientation="Vertical" Spacing="10">
+                            <TextBox Watermark="Email"/>
+                            <TextBox Watermark="Password" PasswordChar="*"/>
+                        </StackPanel>                        
+                        <TextBlock Text="¿Olvidaste tu contraseña?" 
+                                       HorizontalAlignment="Right" Foreground="{StaticResource prColor}" 
+                                       FontSize="12"
+                                       FontWeight="Medium"/>
+                        <StackPanel Orientation="Horizontal"
+                                    Spacing="15" 
+                                    HorizontalAlignment="Center">
+							<Rectangle Width="50" Height="2" Fill="rgba(0,0,0,0.3)"/>
+                            <TextBlock Text="or" FontWeight="SemiBold" FontSize="14"
+                                       Foreground="rgba(0,0,0,0.8)"/>
+							<Rectangle Width="50" Height="2" Fill="rgba(0,0,0,0.3)"/>
+                        </StackPanel>
+                        <Button Classes="googleButton" HorizontalAlignment="Stretch"/>
+                        <Button Classes="submitButton" Content="Login" HorizontalAlignment="Stretch"/>
+                        <Button Classes="exitButton" Content="Exit" HorizontalAlignment="Stretch"/>
+                        <TextBlock HorizontalAlignment="Center" FontWeight="Medium">
+							<Run Text="¿No tienes una cuenta?" Foreground="rgba(0,0,0,0.8)"/>
+							<Run Text="Crear cuenta aquí" Foreground="{StaticResource prColor}"/>
+                        </TextBlock>
+                    </StackPanel>	
+                <!--</Border>--><!--esto de aqui es solo para depurar-->				
             </Grid>
         </Grid>
     </Border>

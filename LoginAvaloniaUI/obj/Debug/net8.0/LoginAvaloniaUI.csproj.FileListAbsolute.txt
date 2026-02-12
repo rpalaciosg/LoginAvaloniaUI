@@ -73,3 +73,4 @@ E:\RespaldosMaz\Richard\LoginAvaloniaUI\LoginAvaloniaUI\obj\Debug\net8.0\LoginAv
 E:\RespaldosMaz\Richard\LoginAvaloniaUI\LoginAvaloniaUI\obj\Debug\net8.0\LoginAvaloniaUI.genruntimeconfig.cache
 E:\RespaldosMaz\Richard\LoginAvaloniaUI\LoginAvaloniaUI\obj\Debug\net8.0\ref\LoginAvaloniaUI.dll
 E:\RespaldosMaz\Richard\LoginAvaloniaUI\LoginAvaloniaUI\bin\Debug\net8.0\Assets\bg.jpg
+E:\RespaldosMaz\Richard\LoginAvaloniaUI\LoginAvaloniaUI\obj\Debug\net8.0\LoginAvaloniaUI.sourcelink.json

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoginAvaloniaUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a123c1870f8f0fedaa88bcc407f8cb3bad14296")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoginAvaloniaUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoginAvaloniaUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
