@@ -5,6 +5,8 @@
     <Nullable>enable</Nullable>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+	  <!--activar hotlreload-->
+	  <EnableHotReload>true</EnableHotReload>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Assets\bg.jpg" />
