@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:res="clr-namespace:LoginAvaloniaUI.Resources"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="LoginAvaloniaUI.MainWindow"
         Title="LoginAvaloniaUI"
@@ -45,13 +46,13 @@
 				    <StackPanel HorizontalAlignment="Stretch" 
                                 VerticalAlignment="Center" Orientation="Vertical"
                                 Spacing="20">
-					    <TextBlock Text="Login" FontSize="16" FontWeight="ExtraBold" 
+					    <TextBlock Text="Login" FontSize="36" FontWeight="ExtraBold" 
                                    HorizontalAlignment="Center" Foreground="rgba(0,0,0,0.9)"/>
                         <TextBlock Text="Bienvenido a D1POS" HorizontalAlignment="Center"
                                    FontSize="14" FontWeight="SemiBold" Foreground="rgba(0,0,0,0.8)"/>
                         
                         <StackPanel Orientation="Vertical" Spacing="10">
-                            <TextBox Watermark="Email"/>
+                            <TextBox Watermark="Email"/>                 
                             <TextBox Watermark="Password" PasswordChar="*"/>
                         </StackPanel>                        
                         <TextBlock Text="¿Olvidaste tu contraseña?" 
