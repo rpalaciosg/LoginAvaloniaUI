@@ -5,6 +5,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:res="clr-namespace:LoginAvaloniaUI.Resources"
+        xmlns:vm="using:LoginAvaloniaUI.ViewModels"
+        x:DataType="vm:MainWindowViewModel"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="LoginAvaloniaUI.MainWindow"
         Title="LoginAvaloniaUI"
@@ -70,7 +72,8 @@
                         </StackPanel>
                         <Button Classes="googleButton" HorizontalAlignment="Stretch"/>
                         <Button Classes="submitButton" Content="Login" HorizontalAlignment="Stretch"/>
-                        <Button Classes="exitButton" Content="Exit" HorizontalAlignment="Stretch"/>
+                        <Button Classes="exitButton" Content="Exit" HorizontalAlignment="Stretch"
+                                Command="{Binding ExitCommand}"/>
                         <TextBlock HorizontalAlignment="Center" FontWeight="Medium">
 							<Run Text="¿No tienes una cuenta?" Foreground="rgba(0,0,0,0.8)"/>
 							<Run Text="Crear cuenta aquí" Foreground="{StaticResource prColor}"/>

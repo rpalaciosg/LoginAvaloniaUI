@@ -1,10 +1,26 @@
 using System.Collections.ObjectModel;
 using Avalonia.Media;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using LoginAvaloniaUI.Services;
 
 namespace LoginAvaloniaUI.ViewModels;
 
-public sealed class MainWindowViewModel
+public sealed partial class MainWindowViewModel : ObservableObject
 {
+    private readonly IAppLifetimeService _appLifetimeService;
+
+    public MainWindowViewModel(IAppLifetimeService appLifetimeService)
+    {
+        _appLifetimeService = appLifetimeService;
+    }
+
+    [RelayCommand]
+    private void Exit()
+    { 
+        _appLifetimeService.Shutdown();
+    }
+
     public ObservableCollection<CardItem> Cards { get; } = new()
     {
         new CardItem
